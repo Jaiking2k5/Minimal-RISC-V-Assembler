@@ -9,18 +9,6 @@ Features
  Clean modular code (tokenizer, encoder, label resolver, writer)
  Outputs clean `.hex` file (32-bit hex per line)
 
- Project Structure
-minimal_riscv_assembler/
-├── assembler.py
-├── pseudo.py
-├── encoder.py
-├── tokenizer.py
-├── labels.py
-├── test_programs/
-│   ├── test1.asm
-│   └── test2.asm
-└── output.hex
-
 How It Works
 1. Tokenization: Parses the assembly line-by-line
 2. First Pass: Records label positions (for `beq`, jumps)
@@ -52,7 +40,3 @@ Learning Outcomes
 - Add support for U-type, J-type
 - Handle real `.data`, `.text` segments
 - GUI or web interface for educational use
-
-Test Cases
-See the separate file: [`RISC-V_Assembler_Tests.txt`](../RISC-V_Assembler_Tests.txt)
-
